@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -u --no-clobber --recursive --verbose ./*.html ../
+cp -u --no-clobber --recursive ./*.html ../
