@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1a | sort -d --version-sort | awk '{printf "%s%s", $0, (/^[^[:alnum:]]/ ? "" : (/^d/ ? "/" : ""))", "}'
+ls -1ap | grep -v '/$' | tr '\n' ',' | sed 's/,$/\n/'
